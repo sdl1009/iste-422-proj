@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.36.0" timestamp="2021-10-06T22:39:59.604">
+<file name="/Users/sethlanders/Desktop/Fall 2021 School Work/ISTE_422/Project/rit-iste422-project/src/main/java/CreateDDLMySQL.java">
+<violation beginline="12" endline="12" begincolumn="25" endcolumn="85" rule="LoggerIsNotStaticFinal" ruleset="Error Prone" class="CreateDDLMySQL" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#loggerisnotstaticfinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="14" endline="14" begincolumn="21" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="CreateDDLMySQL" variable="databaseName" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="23" endcolumn="33" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="CreateDDLMySQL" variable="strDataType" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="27" endcolumn="28" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="CreateDDLMySQL" variable="sb" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="38" endline="105" begincolumn="22" endcolumn="79" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="relatedFields" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'relatedFields' (lines '38'-'105').
+</violation>
+<violation beginline="39" endline="59" begincolumn="22" endcolumn="56" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="primaryKey" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'primaryKey' (lines '39'-'59').
+</violation>
+<violation beginline="40" endline="60" begincolumn="22" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="numPrimaryKey" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'numPrimaryKey' (lines '40'-'60').
+</violation>
+<violation beginline="41" endline="65" begincolumn="22" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="numForeignKey" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'numForeignKey' (lines '41'-'65').
+</violation>
+<violation beginline="52" endline="52" begincolumn="56" endcolumn="56" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="59" endline="59" begincolumn="22" endcolumn="56" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="primaryKey" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'primaryKey' (lines '59'-'59').
+</violation>
+<violation beginline="59" endline="62" begincolumn="22" endcolumn="57" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="primaryKey" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'primaryKey' (lines '59'-'62').
+</violation>
+<violation beginline="59" endline="105" begincolumn="22" endcolumn="56" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="primaryKey" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'primaryKey' (lines '59'-'105').
+</violation>
+<violation beginline="60" endline="60" begincolumn="22" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="numPrimaryKey" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'numPrimaryKey' (lines '60'-'60').
+</violation>
+<violation beginline="62" endline="105" begincolumn="22" endcolumn="57" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="primaryKey" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'primaryKey' (lines '62'-'105').
+</violation>
+<violation beginline="65" endline="65" begincolumn="22" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="numForeignKey" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'numForeignKey' (lines '65'-'65').
+</violation>
+<violation beginline="87" endline="105" begincolumn="23" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="currentFK" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'currentFK' (lines '87'-'105').
+</violation>
+<violation beginline="96" endline="87" begincolumn="23" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="currentFK" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'currentFK' (lines '96'-'87').
+</violation>
+<violation beginline="96" endline="105" begincolumn="25" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="CreateDDLMySQL" method="createDDL" variable="currentFK" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'currentFK' (lines '96'-'105').
+</violation>
+</file>
+<file name="/Users/sethlanders/Desktop/Fall 2021 School Work/ISTE_422/Project/rit-iste422-project/src/main/java/EdgeConnector.java">
+<violation beginline="7" endline="7" begincolumn="25" endcolumn="84" rule="LoggerIsNotStaticFinal" ruleset="Error Prone" class="EdgeConnector" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#loggerisnotstaticfinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="9" endline="9" begincolumn="16" endcolumn="27" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConnector" variable="numConnector" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="9" endline="9" begincolumn="30" endcolumn="38" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConnector" variable="endPoint1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="9" endline="9" begincolumn="41" endcolumn="49" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConnector" variable="endPoint2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="10" endline="10" begincolumn="19" endcolumn="27" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConnector" variable="endStyle1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="10" endline="10" begincolumn="30" endcolumn="38" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConnector" variable="endStyle2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+</file>
+<file name="/Users/sethlanders/Desktop/Fall 2021 School Work/ISTE_422/Project/rit-iste422-project/src/main/java/EdgeConvertCreateDDL.java">
+<violation beginline="12" endline="12" begincolumn="25" endcolumn="91" rule="LoggerIsNotStaticFinal" ruleset="Error Prone" class="EdgeConvertCreateDDL" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#loggerisnotstaticfinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="15" endline="15" begincolumn="26" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertCreateDDL" variable="tables" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="26" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertCreateDDL" variable="fields" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="20" endcolumn="33" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertCreateDDL" variable="numBoundTables" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="18" endcolumn="25" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertCreateDDL" variable="maxBound" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="19" endline="19" begincolumn="27" endcolumn="28" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertCreateDDL" variable="sb" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="7" endcolumn="18" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" class="EdgeConvertCreateDDL" method="EdgeConvertCreateDDL" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
+Overridable method 'initialize' called during object construction
+</violation>
+<violation beginline="41" endline="45" begincolumn="16" endcolumn="25" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertCreateDDL" method="initialize" variable="numBound" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'numBound' (lines '41'-'45').
+</violation>
+<violation beginline="45" endline="45" begincolumn="16" endcolumn="25" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertCreateDDL" method="initialize" variable="numBound" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'numBound' (lines '45'-'45').
+</violation>
+</file>
+<file name="/Users/sethlanders/Desktop/Fall 2021 School Work/ISTE_422/Project/rit-iste422-project/src/main/java/EdgeConvertFileParser.java">
+<violation beginline="10" endline="10" begincolumn="25" endcolumn="92" rule="LoggerIsNotStaticFinal" ruleset="Error Prone" class="EdgeConvertFileParser" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#loggerisnotstaticfinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="13" endline="13" begincolumn="17" endcolumn="25" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="parseFile" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="14" endline="14" begincolumn="23" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="fr" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="15" endline="15" begincolumn="27" endcolumn="28" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="br" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="19" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="currentLine" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="22" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="alTables" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="32" endcolumn="39" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="alFields" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="42" endcolumn="53" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="alConnectors" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="24" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="tables" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="19" endline="19" begincolumn="24" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="fields" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="20" endline="20" begincolumn="22" endcolumn="30" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="tempField" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="21" endline="21" begincolumn="28" endcolumn="37" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="connectors" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="22" begincolumn="19" endcolumn="23" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="style" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="19" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="text" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="24" endline="24" begincolumn="19" endcolumn="27" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="tableName" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="25" endline="25" begincolumn="19" endcolumn="27" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="fieldName" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="20" endcolumn="27" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="isEntity" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="30" endcolumn="40" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="isAttribute" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="43" endcolumn="54" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="isUnderlined" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="16" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="numFigure" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="27" endcolumn="38" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="numConnector" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="41" endcolumn="49" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="numFields" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="52" endcolumn="60" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="numTables" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="16" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="endPoint1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="27" endcolumn="35" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="endPoint2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="29" endline="29" begincolumn="16" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="numLine" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="30" endline="30" begincolumn="19" endcolumn="27" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="endStyle1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="30" endline="30" begincolumn="30" endcolumn="38" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertFileParser" variable="endStyle2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="45" endline="45" begincolumn="7" endcolumn="30" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" class="EdgeConvertFileParser" method="EdgeConvertFileParser" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
+Overridable method 'openFile' called during object construction
+</violation>
+<violation beginline="50" endline="50" begincolumn="14" endcolumn="50" rule="AssignmentInOperand" ruleset="Error Prone" class="EdgeConvertFileParser" method="parseEdgeFile" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#assignmentinoperand" priority="3">
+Avoid assignments in operands
+</violation>
+<violation beginline="140" endline="144" begincolumn="10" endcolumn="24" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="fieldIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'fieldIndex' (lines '140'-'144').
+</violation>
+<violation beginline="140" endline="158" begincolumn="16" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="table1Index" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'table1Index' (lines '140'-'158').
+</violation>
+<violation beginline="140" endline="162" begincolumn="16" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="table2Index" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'table2Index' (lines '140'-'162').
+</violation>
+<violation beginline="144" endline="148" begincolumn="16" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="fieldIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'fieldIndex' (lines '144'-'148').
+</violation>
+<violation beginline="148" endline="148" begincolumn="16" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="fieldIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'fieldIndex' (lines '148'-'148').
+</violation>
+<violation beginline="148" endline="152" begincolumn="16" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="fieldIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'fieldIndex' (lines '148'-'152').
+</violation>
+<violation beginline="148" endline="199" begincolumn="16" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="fieldIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'fieldIndex' (lines '148'-'199').
+</violation>
+<violation beginline="152" endline="148" begincolumn="16" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="fieldIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'fieldIndex' (lines '152'-'148').
+</violation>
+<violation beginline="152" endline="152" begincolumn="16" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="fieldIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'fieldIndex' (lines '152'-'152').
+</violation>
+<violation beginline="152" endline="199" begincolumn="16" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="fieldIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'fieldIndex' (lines '152'-'199').
+</violation>
+<violation beginline="158" endline="158" begincolumn="16" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="table1Index" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'table1Index' (lines '158'-'158').
+</violation>
+<violation beginline="158" endline="199" begincolumn="16" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="table1Index" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'table1Index' (lines '158'-'199').
+</violation>
+<violation beginline="162" endline="162" begincolumn="16" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="table2Index" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'table2Index' (lines '162'-'162').
+</violation>
+<violation beginline="162" endline="199" begincolumn="16" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertFileParser" method="resolveConnectors" variable="table2Index" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'table2Index' (lines '162'-'199').
+</violation>
+<violation beginline="242" endline="242" begincolumn="14" endcolumn="50" rule="AssignmentInOperand" ruleset="Error Prone" class="EdgeConvertFileParser" method="parseSaveFile" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#assignmentinoperand" priority="3">
+Avoid assignments in operands
+</violation>
+<violation beginline="320" endline="320" begincolumn="10" endcolumn="20" rule="DoNotTerminateVM" ruleset="Error Prone" class="EdgeConvertFileParser" method="openFile" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#donotterminatevm" priority="3">
+System.exit() should not be used in J2EE/JEE apps
+</violation>
+<violation beginline="324" endline="324" begincolumn="10" endcolumn="20" rule="DoNotTerminateVM" ruleset="Error Prone" class="EdgeConvertFileParser" method="openFile" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#donotterminatevm" priority="3">
+System.exit() should not be used in J2EE/JEE apps
+</violation>
+</file>
+<file name="/Users/sethlanders/Desktop/Fall 2021 School Work/ISTE_422/Project/rit-iste422-project/src/main/java/EdgeConvertGUI.java">
+<violation beginline="17" endline="17" begincolumn="25" endcolumn="85" rule="LoggerIsNotStaticFinal" ruleset="Error Prone" class="EdgeConvertGUI" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#loggerisnotstaticfinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="28" endline="28" begincolumn="17" endcolumn="25" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="parseFile" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="28" endcolumn="35" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="saveFile" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="38" endcolumn="47" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="outputFile" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="50" endcolumn="58" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="outputDir" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="61" endcolumn="72" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="outputDirOld" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="29" endline="29" begincolumn="19" endcolumn="35" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="truncatedFilename" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="30" endline="30" begincolumn="19" endcolumn="27" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="sqlString" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="31" endline="31" begincolumn="19" endcolumn="30" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="databaseName" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="32" endline="32" begincolumn="21" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="menuListener" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="33" endline="33" begincolumn="28" endcolumn="40" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="radioListener" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="34" endline="34" begincolumn="23" endcolumn="40" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="edgeWindowListener" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="35" endline="35" begincolumn="28" endcolumn="44" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="createDDLListener" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="36" endline="36" begincolumn="34" endcolumn="37" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="ecfp" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="39" endline="39" begincolumn="24" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="tables" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="40" endline="40" begincolumn="24" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="fields" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="41" endline="41" begincolumn="22" endcolumn="35" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="currentDTTable" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="41" endline="41" begincolumn="38" endcolumn="52" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="currentDRTable1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="41" endline="41" begincolumn="55" endcolumn="69" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="currentDRTable2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="42" endline="42" begincolumn="22" endcolumn="35" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="currentDTField" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="42" endline="42" begincolumn="38" endcolumn="52" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="currentDRField1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="42" endline="42" begincolumn="55" endcolumn="69" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="currentDRField2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="44" endline="44" begincolumn="20" endcolumn="28" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="dataSaved" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="45" endline="45" begincolumn="22" endcolumn="33" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="alSubclasses" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="45" endline="45" begincolumn="36" endcolumn="49" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="alProductNames" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="46" endline="46" begincolumn="21" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="productNames" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="47" endline="47" begincolumn="21" endcolumn="33" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConvertGUI" variable="objSubclasses" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="86" endline="86" begincolumn="7" endcolumn="20" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" class="EdgeConvertGUI" method="EdgeConvertGUI" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
+Overridable method 'showGUI' called during object construction
+</violation>
+<violation beginline="105" endline="500" begincolumn="17" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="createDTScreen" variable="cp" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'cp' (lines '105'-'500').
+</violation>
+<violation beginline="105" endline="500" begincolumn="17" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="createDTScreen" variable="cp" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'cp' (lines '105'-'500').
+</violation>
+<violation beginline="105" endline="500" begincolumn="17" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="createDTScreen" variable="cp" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'cp' (lines '105'-'500').
+</violation>
+<violation beginline="105" endline="500" begincolumn="17" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="createDTScreen" variable="cp" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'cp' (lines '105'-'500').
+</violation>
+<violation beginline="105" endline="500" begincolumn="17" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="createDTScreen" variable="cp" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'cp' (lines '105'-'500').
+</violation>
+<violation beginline="105" endline="500" begincolumn="17" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="createDTScreen" variable="cp" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'cp' (lines '105'-'500').
+</violation>
+<violation beginline="105" endline="500" begincolumn="17" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="createDTScreen" variable="cp" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'cp' (lines '105'-'500').
+</violation>
+<violation beginline="105" endline="500" begincolumn="17" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="createDTScreen" variable="cp" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'cp' (lines '105'-'500').
+</violation>
+<violation beginline="105" endline="500" begincolumn="17" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="createDTScreen" variable="cp" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'cp' (lines '105'-'500').
+</violation>
+<violation beginline="105" endline="500" begincolumn="17" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="createDTScreen" variable="cp" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'cp' (lines '105'-'500').
+</violation>
+<violation beginline="356" endline="376" begincolumn="28" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'goodData' (lines '356'-'376').
+</violation>
+<violation beginline="356" endline="376" begincolumn="28" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'goodData' (lines '356'-'376').
+</violation>
+<violation beginline="356" endline="376" begincolumn="28" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'goodData' (lines '356'-'376').
+</violation>
+<violation beginline="356" endline="376" begincolumn="28" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'goodData' (lines '356'-'376').
+</violation>
+<violation beginline="356" endline="376" begincolumn="28" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'goodData' (lines '356'-'376').
+</violation>
+<violation beginline="356" endline="376" begincolumn="28" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'goodData' (lines '356'-'376').
+</violation>
+<violation beginline="356" endline="376" begincolumn="28" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'goodData' (lines '356'-'376').
+</violation>
+<violation beginline="356" endline="376" begincolumn="28" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'goodData' (lines '356'-'376').
+</violation>
+<violation beginline="356" endline="376" begincolumn="28" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'goodData' (lines '356'-'376').
+</violation>
+<violation beginline="356" endline="376" begincolumn="28" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'goodData' (lines '356'-'376').
+</violation>
+<violation beginline="356" endline="500" begincolumn="24" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'goodData' (lines '356'-'500').
+</violation>
+<violation beginline="356" endline="500" begincolumn="24" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'goodData' (lines '356'-'500').
+</violation>
+<violation beginline="356" endline="500" begincolumn="24" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'goodData' (lines '356'-'500').
+</violation>
+<violation beginline="356" endline="500" begincolumn="24" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'goodData' (lines '356'-'500').
+</violation>
+<violation beginline="356" endline="500" begincolumn="24" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'goodData' (lines '356'-'500').
+</violation>
+<violation beginline="356" endline="500" begincolumn="24" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'goodData' (lines '356'-'500').
+</violation>
+<violation beginline="356" endline="500" begincolumn="24" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'goodData' (lines '356'-'500').
+</violation>
+<violation beginline="356" endline="500" begincolumn="24" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'goodData' (lines '356'-'500').
+</violation>
+<violation beginline="356" endline="500" begincolumn="24" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'goodData' (lines '356'-'500').
+</violation>
+<violation beginline="356" endline="500" begincolumn="24" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="goodData" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'goodData' (lines '356'-'500').
+</violation>
+<violation beginline="357" endline="500" begincolumn="20" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="i" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'i' (lines '357'-'500').
+</violation>
+<violation beginline="357" endline="500" begincolumn="20" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="i" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'i' (lines '357'-'500').
+</violation>
+<violation beginline="357" endline="500" begincolumn="20" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="i" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'i' (lines '357'-'500').
+</violation>
+<violation beginline="357" endline="500" begincolumn="20" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="i" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'i' (lines '357'-'500').
+</violation>
+<violation beginline="357" endline="500" begincolumn="20" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="i" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'i' (lines '357'-'500').
+</violation>
+<violation beginline="357" endline="500" begincolumn="20" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="i" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'i' (lines '357'-'500').
+</violation>
+<violation beginline="357" endline="500" begincolumn="20" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="i" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'i' (lines '357'-'500').
+</violation>
+<violation beginline="357" endline="500" begincolumn="20" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="i" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'i' (lines '357'-'500').
+</violation>
+<violation beginline="357" endline="500" begincolumn="20" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="i" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'i' (lines '357'-'500').
+</violation>
+<violation beginline="357" endline="500" begincolumn="20" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="i" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'i' (lines '357'-'500').
+</violation>
+<violation beginline="384" endline="384" begincolumn="44" endcolumn="63" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="396" endline="396" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'intResult' (lines '396'-'396').
+</violation>
+<violation beginline="396" endline="396" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'intResult' (lines '396'-'396').
+</violation>
+<violation beginline="396" endline="396" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'intResult' (lines '396'-'396').
+</violation>
+<violation beginline="396" endline="396" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'intResult' (lines '396'-'396').
+</violation>
+<violation beginline="396" endline="396" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'intResult' (lines '396'-'396').
+</violation>
+<violation beginline="396" endline="396" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'intResult' (lines '396'-'396').
+</violation>
+<violation beginline="396" endline="396" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'intResult' (lines '396'-'396').
+</violation>
+<violation beginline="396" endline="396" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'intResult' (lines '396'-'396').
+</violation>
+<violation beginline="396" endline="396" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'intResult' (lines '396'-'396').
+</violation>
+<violation beginline="396" endline="396" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'intResult' (lines '396'-'396').
+</violation>
+<violation beginline="396" endline="500" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'intResult' (lines '396'-'500').
+</violation>
+<violation beginline="396" endline="500" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'intResult' (lines '396'-'500').
+</violation>
+<violation beginline="396" endline="500" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'intResult' (lines '396'-'500').
+</violation>
+<violation beginline="396" endline="500" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'intResult' (lines '396'-'500').
+</violation>
+<violation beginline="396" endline="500" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'intResult' (lines '396'-'500').
+</violation>
+<violation beginline="396" endline="500" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'intResult' (lines '396'-'500').
+</violation>
+<violation beginline="396" endline="500" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'intResult' (lines '396'-'500').
+</violation>
+<violation beginline="396" endline="500" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'intResult' (lines '396'-'500').
+</violation>
+<violation beginline="396" endline="500" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'intResult' (lines '396'-'500').
+</violation>
+<violation beginline="396" endline="500" begincolumn="32" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="intResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'intResult' (lines '396'-'500').
+</violation>
+<violation beginline="407" endline="407" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'doubleResult' (lines '407'-'407').
+</violation>
+<violation beginline="407" endline="407" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'doubleResult' (lines '407'-'407').
+</violation>
+<violation beginline="407" endline="407" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'doubleResult' (lines '407'-'407').
+</violation>
+<violation beginline="407" endline="407" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'doubleResult' (lines '407'-'407').
+</violation>
+<violation beginline="407" endline="407" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'doubleResult' (lines '407'-'407').
+</violation>
+<violation beginline="407" endline="407" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'doubleResult' (lines '407'-'407').
+</violation>
+<violation beginline="407" endline="407" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'doubleResult' (lines '407'-'407').
+</violation>
+<violation beginline="407" endline="407" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'doubleResult' (lines '407'-'407').
+</violation>
+<violation beginline="407" endline="407" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'doubleResult' (lines '407'-'407').
+</violation>
+<violation beginline="407" endline="407" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'doubleResult' (lines '407'-'407').
+</violation>
+<violation beginline="407" endline="500" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'doubleResult' (lines '407'-'500').
+</violation>
+<violation beginline="407" endline="500" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'doubleResult' (lines '407'-'500').
+</violation>
+<violation beginline="407" endline="500" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'doubleResult' (lines '407'-'500').
+</violation>
+<violation beginline="407" endline="500" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'doubleResult' (lines '407'-'500').
+</violation>
+<violation beginline="407" endline="500" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'doubleResult' (lines '407'-'500').
+</violation>
+<violation beginline="407" endline="500" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'doubleResult' (lines '407'-'500').
+</violation>
+<violation beginline="407" endline="500" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'doubleResult' (lines '407'-'500').
+</violation>
+<violation beginline="407" endline="500" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'doubleResult' (lines '407'-'500').
+</violation>
+<violation beginline="407" endline="500" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'doubleResult' (lines '407'-'500').
+</violation>
+<violation beginline="407" endline="500" begincolumn="35" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="doubleResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'doubleResult' (lines '407'-'500').
+</violation>
+<violation beginline="459" endline="500" begincolumn="20" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="selIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'selIndex' (lines '459'-'500').
+</violation>
+<violation beginline="459" endline="500" begincolumn="20" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="selIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'selIndex' (lines '459'-'500').
+</violation>
+<violation beginline="459" endline="500" begincolumn="20" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="selIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'selIndex' (lines '459'-'500').
+</violation>
+<violation beginline="459" endline="500" begincolumn="20" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="selIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'selIndex' (lines '459'-'500').
+</violation>
+<violation beginline="459" endline="500" begincolumn="20" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="selIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'selIndex' (lines '459'-'500').
+</violation>
+<violation beginline="459" endline="500" begincolumn="20" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="selIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'selIndex' (lines '459'-'500').
+</violation>
+<violation beginline="459" endline="500" begincolumn="20" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="selIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'selIndex' (lines '459'-'500').
+</violation>
+<violation beginline="459" endline="500" begincolumn="20" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="selIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'selIndex' (lines '459'-'500').
+</violation>
+<violation beginline="459" endline="500" begincolumn="20" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="selIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'selIndex' (lines '459'-'500').
+</violation>
+<violation beginline="459" endline="500" begincolumn="20" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="selIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'selIndex' (lines '459'-'500').
+</violation>
+<violation beginline="462" endline="462" begincolumn="41" endcolumn="41" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="695" endline="759" begincolumn="20" endcolumn="77" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="nativeIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'nativeIndex' (lines '695'-'759').
+</violation>
+<violation beginline="695" endline="759" begincolumn="20" endcolumn="77" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="nativeIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'nativeIndex' (lines '695'-'759').
+</violation>
+<violation beginline="695" endline="759" begincolumn="20" endcolumn="77" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="nativeIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'nativeIndex' (lines '695'-'759').
+</violation>
+<violation beginline="695" endline="759" begincolumn="20" endcolumn="77" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="nativeIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'nativeIndex' (lines '695'-'759').
+</violation>
+<violation beginline="695" endline="759" begincolumn="20" endcolumn="77" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="nativeIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'nativeIndex' (lines '695'-'759').
+</violation>
+<violation beginline="695" endline="759" begincolumn="20" endcolumn="77" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="nativeIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'nativeIndex' (lines '695'-'759').
+</violation>
+<violation beginline="695" endline="759" begincolumn="20" endcolumn="77" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" variable="nativeIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'nativeIndex' (lines '695'-'759').
+</violation>
+<violation beginline="701" endline="701" begincolumn="62" endcolumn="76" rule="AvoidDuplicateLiterals" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Are you sure?" appears 6 times in this file; the first occurrence is on line 701
+</violation>
+<violation beginline="724" endline="724" begincolumn="77" endcolumn="83" rule="AvoidDuplicateLiterals" ruleset="Error Prone" class="EdgeConvertGUI" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal " and " appears 4 times in this file; the first occurrence is on line 724
+</violation>
+<violation beginline="924" endline="924" begincolumn="40" endcolumn="44" rule="AvoidDuplicateLiterals" ruleset="Error Prone" class="EdgeConvertGUI" method="saveAs" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal " - " appears 6 times in this file; the first occurrence is on line 924
+</violation>
+<violation beginline="1004" endline="1021" begincolumn="15" endcolumn="58" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="getOutputClasses" variable="resultFiles" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'resultFiles' (lines '1,004'-'1,021').
+</violation>
+<violation beginline="1005" endline="1067" begincolumn="13" endcolumn="30" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="getOutputClasses" variable="resultClass" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'resultClass' (lines '1,005'-'1,067').
+</violation>
+<violation beginline="1021" endline="1067" begincolumn="15" endcolumn="58" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EdgeConvertGUI" method="getOutputClasses" variable="resultFiles" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'resultFiles' (lines '1,021'-'1,067').
+</violation>
+<violation beginline="1190" endline="1190" begincolumn="20" endcolumn="41" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeWindowListener" method="windowClosing" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1193" endline="1193" begincolumn="20" endcolumn="41" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeWindowListener" method="windowClosing" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1199" endline="1199" begincolumn="10" endcolumn="20" rule="DoNotTerminateVM" ruleset="Error Prone" class="EdgeConvertGUI$EdgeWindowListener" method="windowClosing" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#donotterminatevm" priority="3">
+System.exit() should not be used in J2EE/JEE apps
+</violation>
+<violation beginline="1221" endline="1221" begincolumn="15" endcolumn="45" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1221" endline="1221" begincolumn="52" endcolumn="82" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1239" endline="1239" begincolumn="23" endcolumn="26" rule="NullAssignment" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="1241" endline="1241" begincolumn="27" endcolumn="30" rule="NullAssignment" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="1260" endline="1260" begincolumn="15" endcolumn="45" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1260" endline="1260" begincolumn="52" endcolumn="82" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1275" endline="1275" begincolumn="23" endcolumn="26" rule="NullAssignment" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="1277" endline="1277" begincolumn="28" endcolumn="31" rule="NullAssignment" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="1296" endline="1296" begincolumn="15" endcolumn="43" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1296" endline="1296" begincolumn="50" endcolumn="78" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1297" endline="1297" begincolumn="15" endcolumn="41" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1297" endline="1297" begincolumn="48" endcolumn="74" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1298" endline="1298" begincolumn="18" endcolumn="46" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1298" endline="1298" begincolumn="53" endcolumn="81" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1305" endline="1305" begincolumn="15" endcolumn="41" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1305" endline="1305" begincolumn="48" endcolumn="74" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1323" endline="1323" begincolumn="13" endcolumn="23" rule="DoNotTerminateVM" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#donotterminatevm" priority="3">
+System.exit() should not be used in J2EE/JEE apps
+</violation>
+<violation beginline="1326" endline="1326" begincolumn="15" endcolumn="58" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1326" endline="1326" begincolumn="65" endcolumn="108" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1330" endline="1330" begincolumn="15" endcolumn="56" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1330" endline="1330" begincolumn="63" endcolumn="104" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1334" endline="1334" begincolumn="15" endcolumn="46" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="1334" endline="1334" begincolumn="53" endcolumn="84" rule="CompareObjectsWithEquals" ruleset="Error Prone" class="EdgeConvertGUI$EdgeMenuListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+</file>
+<file name="/Users/sethlanders/Desktop/Fall 2021 School Work/ISTE_422/Project/rit-iste422-project/src/main/java/EdgeField.java">
+<violation beginline="8" endline="8" begincolumn="25" endcolumn="80" rule="LoggerIsNotStaticFinal" ruleset="Error Prone" class="EdgeField" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#loggerisnotstaticfinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="10" endline="10" begincolumn="16" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeField" variable="numFigure" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="11" endline="11" begincolumn="19" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeField" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+</file>
+<file name="/Users/sethlanders/Desktop/Fall 2021 School Work/ISTE_422/Project/rit-iste422-project/src/main/java/EdgeTable.java">
+<violation beginline="8" endline="8" begincolumn="25" endcolumn="80" rule="LoggerIsNotStaticFinal" ruleset="Error Prone" class="EdgeTable" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#loggerisnotstaticfinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="10" endline="10" begincolumn="16" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeTable" variable="numFigure" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="11" endline="11" begincolumn="19" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeTable" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="12" endline="12" begincolumn="22" endcolumn="36" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeTable" variable="alRelatedTables" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="12" endline="12" begincolumn="39" endcolumn="52" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeTable" variable="alNativeFields" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="13" endline="13" begincolumn="18" endcolumn="30" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeTable" variable="relatedTables" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="13" endline="13" begincolumn="33" endcolumn="45" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeTable" variable="relatedFields" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="13" endline="13" begincolumn="48" endcolumn="59" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeTable" variable="nativeFields" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+</file>
+<file name="/Users/sethlanders/Desktop/Fall 2021 School Work/ISTE_422/Project/rit-iste422-project/src/main/java/ExampleFileFilter.java">
+<violation beginline="71" endline="71" begincolumn="23" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExampleFileFilter" variable="filters" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="73" endline="73" begincolumn="20" endcolumn="34" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExampleFileFilter" variable="fullDescription" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="74" endline="74" begincolumn="21" endcolumn="46" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExampleFileFilter" variable="useExtensionsInDescription" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="107" endline="107" begincolumn="22" endcolumn="44" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" class="ExampleFileFilter" method="ExampleFileFilter" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
+Overridable method 'addExtension' called during object construction
+</violation>
+<violation beginline="108" endline="108" begincolumn="25" endcolumn="51" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" class="ExampleFileFilter" method="ExampleFileFilter" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
+Overridable method 'setDescription' called during object construction
+</violation>
+<violation beginline="136" endline="136" begincolumn="6" endcolumn="29" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" class="ExampleFileFilter" method="ExampleFileFilter" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
+Overridable method 'addExtension' called during object construction
+</violation>
+<violation beginline="138" endline="138" begincolumn="25" endcolumn="51" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" class="ExampleFileFilter" method="ExampleFileFilter" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
+Overridable method 'setDescription' called during object construction
+</violation>
+<violation beginline="158" endline="158" begincolumn="7" endcolumn="7" rule="EmptyStatementNotInLoop" ruleset="Error Prone" class="ExampleFileFilter" method="accept" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#emptystatementnotinloop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="174" endline="174" begincolumn="10" endcolumn="46" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" class="ExampleFileFilter" method="getExtension" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="175" endline="175" begincolumn="7" endcolumn="7" rule="EmptyStatementNotInLoop" ruleset="Error Prone" class="ExampleFileFilter" method="getExtension" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#emptystatementnotinloop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="196" endline="196" begincolumn="14" endcolumn="36" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" class="ExampleFileFilter" method="addExtension" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="197" endline="197" begincolumn="20" endcolumn="23" rule="NullAssignment" ruleset="Error Prone" class="ExampleFileFilter" method="addExtension" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="240" endline="240" begincolumn="20" endcolumn="23" rule="NullAssignment" ruleset="Error Prone" class="ExampleFileFilter" method="setDescription" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="256" endline="256" begincolumn="20" endcolumn="23" rule="NullAssignment" ruleset="Error Prone" class="ExampleFileFilter" method="setExtensionListInDescription" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+</file>
+<file name="/Users/sethlanders/Desktop/Fall 2021 School Work/ISTE_422/Project/rit-iste422-project/src/main/java/RunEdgeConvert.java">
+<violation beginline="6" endline="6" begincolumn="25" endcolumn="85" rule="LoggerIsNotStaticFinal" ruleset="Error Prone" class="RunEdgeConvert" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#loggerisnotstaticfinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="9" endline="10" begincolumn="22" endcolumn="48" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="RunEdgeConvert" method="main" variable="edge" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'edge' (lines '9'-'10').
+</violation>
+</file>
+</pmd>

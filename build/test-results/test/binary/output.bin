@@ -1,0 +1,5 @@
+A22:50:40.067 [Test worker] INFO  EdgeConnector - numConnector: 1
+I22:50:40.125 [Test worker] INFO  EdgeConnector - Is EP1 Field set? false
+I22:50:40.139 [Test worker] INFO  EdgeConnector - Is EP1 Table set? false
+I22:50:40.149 [Test worker] INFO  EdgeConnector - Is EP2 Field set? false
+I22:50:40.157 [Test worker] INFO  EdgeConnector - Is EP2 Table set? false
