@@ -1,6 +1,8 @@
-2021-10-06 22:50:40.067 [Test worker] INFO  EdgeConnector - numConnector: 1
-2021-10-06 22:50:40.088 [Test worker] DEBUG EdgeConnectorTest - Test endpoint 1 -> 1
-2021-10-06 22:50:40.125 [Test worker] INFO  EdgeConnector - Is EP1 Field set? false
-2021-10-06 22:50:40.139 [Test worker] INFO  EdgeConnector - Is EP1 Table set? false
-2021-10-06 22:50:40.149 [Test worker] INFO  EdgeConnector - Is EP2 Field set? false
-2021-10-06 22:50:40.157 [Test worker] INFO  EdgeConnector - Is EP2 Table set? false
+2021-11-02 00:59:33.145 [main] INFO  EdgeTable - Creating Egde Table with input string 1|Table1
+2021-11-02 00:59:33.150 [main] INFO  EdgeTable - Creating Egde Table with input string 2|Table2
+2021-11-02 00:59:33.153 [main] INFO  EdgeTable - Creating Egde Table with input string 3|Table3
+2021-11-02 00:59:33.155 [main] INFO  EdgeField - Creating Edge Field with input string: 1|Field1
+2021-11-02 00:59:33.155 [main] INFO  EdgeField - Creating Edge Field with input string: 2|Field2
+2021-11-02 00:59:33.157 [main] INFO  EdgeField - Creating Edge Field with input string: 3|Field3
+2021-11-02 00:59:33.158 [main] INFO  EdgeConvertCreateDDL - Creating Edge Convert DDL with 
+2021-11-02 00:59:33.158 [main] INFO  EdgeConvertCreateDDL - Initializing table

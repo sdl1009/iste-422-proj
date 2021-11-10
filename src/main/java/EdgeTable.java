@@ -1,11 +1,11 @@
 import java.util.*;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+// import org.apache.logging.log4j.LogManager;
+// import org.apache.logging.log4j.Logger;
 
 public class EdgeTable {
 
-   public static Logger logger = LogManager.getLogger(EdgeTable.class.getName());
+   // public static Logger logger = LogManager.getLogger(EdgeTable.class.getName());
 
    private int numFigure;
    private String name;
@@ -14,7 +14,7 @@ public class EdgeTable {
    
    public EdgeTable(String inputString) {
 
-      logger.info("Creating Egde Table with input string " + inputString);
+      // logger.info("Creating Egde Table with input string " + inputString);
 
       StringTokenizer st = new StringTokenizer(inputString, EdgeConvertFileParser.DELIM);
       numFigure = Integer.parseInt(st.nextToken());

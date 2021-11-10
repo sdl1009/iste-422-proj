@@ -9,12 +9,12 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.lang.reflect.*;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+// import org.apache.logging.log4j.LogManager;
+// import org.apache.logging.log4j.Logger;
 
 public class EdgeConvertGUI {
 
-   public static Logger logger = LogManager.getLogger(EdgeConvertGUI.class.getName());
+   // public static Logger logger = LogManager.getLogger(EdgeConvertGUI.class.getName());
    
    public static final int HORIZ_SIZE = 635;
    public static final int VERT_SIZE = 400;
@@ -77,7 +77,7 @@ public class EdgeConvertGUI {
    
    public EdgeConvertGUI() {
 
-      logger.info("Creating Edge GUI");
+      // logger.info("Creating Edge GUI");
 
       menuListener = new EdgeMenuListener();
       radioListener = new EdgeRadioButtonListener();
@@ -98,7 +98,7 @@ public class EdgeConvertGUI {
 
    public void createDTScreen() {//create Define Tables screen
 
-      logger.info("Creating Define tables");
+      // logger.info("Creating Define tables");
 
       jfDT = new JFrame(DEFINE_TABLES);
       jfDT.setLocation(HORIZ_LOC, VERT_LOC);
@@ -325,7 +325,7 @@ public class EdgeConvertGUI {
       jcheckDTDisallowNull.addItemListener(
          new ItemListener() {
             public void itemStateChanged(ItemEvent ie) {
-               logger.debug("Set Disallowed Null: " + jcheckDTDisallowNull.isSelected());
+               // logger.debug("Set Disallowed Null: " + jcheckDTDisallowNull.isSelected());
                currentDTField.setDisallowNull(jcheckDTDisallowNull.isSelected());
                dataSaved = false;
             }
@@ -337,7 +337,7 @@ public class EdgeConvertGUI {
       jcheckDTPrimaryKey.addItemListener(
          new ItemListener() {
             public void itemStateChanged(ItemEvent ie) {
-               logger.debug("Set Primary Key : " + jcheckDTPrimaryKey.isSelected());
+               // logger.debug("Set Primary Key : " + jcheckDTPrimaryKey.isSelected());
                currentDTField.setIsPrimaryKey(jcheckDTPrimaryKey.isSelected());
                dataSaved = false;
             }
@@ -350,7 +350,7 @@ public class EdgeConvertGUI {
          new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
 
-               logger.debug("Performing Action" + ae);
+               // logger.debug("Performing Action" + ae);
 
                String prev = jtfDTDefaultValue.getText();
                boolean goodData = false;
@@ -374,10 +374,10 @@ public class EdgeConvertGUI {
                         if (result.length() <= Integer.parseInt(jtfDTVarchar.getText())) {
                            jtfDTDefaultValue.setText(result);
                            goodData = true;
-                           logger.debug("Setting varchar to: " + result);
+                           // logger.debug("Setting varchar to: " + result);
                         } else {
                            JOptionPane.showMessageDialog(null, "The length of this value must be less than or equal to the Varchar length specified.");
-                           logger.warn("Varchar is not valid!");
+                           // logger.warn("Varchar is not valid!");
                         }
                         break;
                      case 1: //boolean
@@ -385,10 +385,10 @@ public class EdgeConvertGUI {
                         if (newResult.equals("true") || newResult.equals("false")) {
                            jtfDTDefaultValue.setText(newResult);
                            goodData = true;
-                           logger.debug("Setting boolean to: " + result);
+                           // logger.debug("Setting boolean to: " + result);
                         } else {
                            JOptionPane.showMessageDialog(null, "You must input a valid boolean value (\"true\" or \"false\").");
-                           logger.warn("Boolean is not valid!");
+                           // logger.warn("Boolean is not valid!");
                         }
                         break;
                      case 2: //Integer
@@ -396,10 +396,10 @@ public class EdgeConvertGUI {
                            int intResult = Integer.parseInt(result);
                            jtfDTDefaultValue.setText(result);
                            goodData = true;
-                           logger.debug("Setting Integer to: " + result);
+                           // logger.debug("Setting Integer to: " + result);
                         } catch (NumberFormatException nfe) {
                            JOptionPane.showMessageDialog(null, "\"" + result + "\" is not an integer or is outside the bounds of valid integer values.");
-                           logger.warn("Integer is not valid!");
+                           // logger.warn("Integer is not valid!");
                         }
                         break;
                      case 3: //Double
@@ -407,20 +407,20 @@ public class EdgeConvertGUI {
                            double doubleResult = Double.parseDouble(result);
                            jtfDTDefaultValue.setText(result);
                            goodData = true;
-                           logger.debug("Setting Double to: " + result);
+                           // logger.debug("Setting Double to: " + result);
                         } catch (NumberFormatException nfe) {
                            JOptionPane.showMessageDialog(null, "\"" + result + "\" is not a double or is outside the bounds of valid double values.");
-                           logger.warn("Double is not valid!");
+                           // logger.warn("Double is not valid!");
                         }
                         break;
                      case 4: //Timestamp
                         try {
                            jtfDTDefaultValue.setText(result);
                            goodData = true;
-                           logger.debug("Setting Timestamp to: " + result);
+                           // logger.debug("Setting Timestamp to: " + result);
                         }
                         catch (Exception e) {
-                           logger.error("Could not set timestamp");
+                           // logger.error("Could not set timestamp");
                         }
                         break;
                   }
@@ -695,12 +695,12 @@ public class EdgeConvertGUI {
                int nativeIndex = jlDRFieldsTablesRelations.getSelectedIndex();
                int relatedField = currentDRField2.getNumFigure();
                if (currentDRField1.getFieldBound() == relatedField) { //the selected fields are already bound to each other
-                  logger.info("Field being unbound: " + currentDRField1);
+                  // logger.info("Field being unbound: " + currentDRField1);
                   int answer = JOptionPane.showConfirmDialog(null, "Do you wish to unbind the relation on field " +
                                                              currentDRField1.getName() + "?",
                                                              "Are you sure?", JOptionPane.YES_NO_OPTION);
                   if (answer == JOptionPane.YES_OPTION) {
-                     logger.debug("Unbinding field" + currentDRField1);
+                     // logger.debug("Unbinding field" + currentDRField1);
                      currentDRTable1.setRelatedField(nativeIndex, 0); //clear the related field
                      currentDRField1.setTableBound(0); //clear the bound table
                      currentDRField1.setFieldBound(0); //clear the bound field
@@ -709,7 +709,7 @@ public class EdgeConvertGUI {
                   return;
                }
                if (currentDRField1.getFieldBound() != 0) { //field is already bound to a different field
-                  logger.info("Field being re-bound: " + currentDRField1);
+                  // logger.info("Field being re-bound: " + currentDRField1);
                   int answer = JOptionPane.showConfirmDialog(null, "There is already a relation defined on field " +
                                                              currentDRField1.getName() + ", do you wish to overwrite it?",
                                                              "Are you sure?", JOptionPane.YES_NO_OPTION);
@@ -723,8 +723,8 @@ public class EdgeConvertGUI {
                   JOptionPane.showMessageDialog(null, "The datatypes of " + currentDRTable1.getName() + "." +
                                                 currentDRField1.getName() + " and " + currentDRTable2.getName() +
                                                 "." + currentDRField2.getName() + " do not match.  Unable to bind this relation.");
-                                                logger.error("Datatypes do not match between: " + currentDRTable1.getName() + "." + currentDRField1.getName() +
-                                                                  " and " + currentDRTable2.getName() + "." + currentDRField2.getName());
+                                                // logger.error("Datatypes do not match between: " + currentDRTable1.getName() + "." + currentDRField1.getName() +
+                                                //                   " and " + currentDRTable2.getName() + "." + currentDRField2.getName());
                   return;
                }
                if ((currentDRField1.getDataType() == 0) && (currentDRField2.getDataType() == 0)) {
@@ -732,8 +732,8 @@ public class EdgeConvertGUI {
                      JOptionPane.showMessageDialog(null, "The varchar lengths of " + currentDRTable1.getName() + "." +
                                                    currentDRField1.getName() + " and " + currentDRTable2.getName() +
                                                    "." + currentDRField2.getName() + " do not match.  Unable to bind this relation.");
-                                                   logger.error("Varchar lengths do not match between: " + currentDRTable1.getName() + "." + currentDRField1.getName() +
-                                                                  " and " + currentDRTable2.getName() + "." + currentDRField2.getName());
+                                                   // logger.error("Varchar lengths do not match between: " + currentDRTable1.getName() + "." + currentDRField1.getName() +
+                                                   //                " and " + currentDRTable2.getName() + "." + currentDRField2.getName());
                      return;
                   }
                }
@@ -907,7 +907,7 @@ public class EdgeConvertGUI {
       if (returnVal == JFileChooser.APPROVE_OPTION) {
          saveFile = jfcEdge.getSelectedFile();
          if (saveFile.exists ()) {
-            logger.info("Save file name: " + saveFile);
+            // logger.info("Save file name: " + saveFile);
              int response = JOptionPane.showConfirmDialog(null, "Overwrite existing file?", "Confirm Overwrite",
                 JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
              if (response == JOptionPane.CANCEL_OPTION) {
@@ -917,7 +917,7 @@ public class EdgeConvertGUI {
          if (!saveFile.getName().endsWith("sav")) {
             String temp = saveFile.getAbsolutePath() + ".sav";
             saveFile = new File(temp);
-            logger.debug("Save file name after apoending .sav" + saveFile);
+            // logger.debug("Save file name after apoending .sav" + saveFile);
          }
          jmiDTSave.setEnabled(true);
          truncatedFilename = saveFile.getName().substring(saveFile.getName().lastIndexOf(File.separator) + 1);
@@ -932,7 +932,7 @@ public class EdgeConvertGUI {
    private void writeSave() {
       if (saveFile != null) {
          try {
-            logger.debug("Saving File");
+            // logger.debug("Saving File");
             pw = new PrintWriter(new BufferedWriter(new FileWriter(saveFile, false)));
             //write the identification line
             pw.println(EdgeConvertFileParser.SAVE_ID);
@@ -949,7 +949,7 @@ public class EdgeConvertGUI {
             //close the file
             pw.close();
          } catch (IOException ioe) {
-            logger.warn("Save Failed!");
+            // logger.warn("Save Failed!");
             System.out.println(ioe);
          }
          dataSaved = true;
@@ -969,7 +969,7 @@ public class EdgeConvertGUI {
       }
 
       if (returnVal == JFileChooser.APPROVE_OPTION) {
-         logger.debug("Trying to set output directory to new diectory");
+         // logger.debug("Trying to set output directory to new diectory");
          outputDir = jfcOutputDir.getSelectedFile();
       }
       
@@ -978,7 +978,7 @@ public class EdgeConvertGUI {
       if (alProductNames.size() == 0) {
          JOptionPane.showMessageDialog(null, "The path:\n" + outputDir + "\ncontains no valid output definition files.");
          outputDir = outputDirOld;
-         logger.warn("Path is not valid. path: " + outputDir);
+         // logger.warn("Path is not valid. path: " + outputDir);
          return;
       }
       
@@ -1077,10 +1077,10 @@ public class EdgeConvertGUI {
                     productNames,
                     null);
 
-      logger.info("SQL response:" + response);
+      // logger.info("SQL response:" + response);
                     
       if (response == null) {
-         logger.warn("No SQL Response");
+         // logger.warn("No SQL Response");
          return EdgeConvertGUI.CANCELLED;
       }
       
@@ -1123,7 +1123,7 @@ public class EdgeConvertGUI {
       int returnVal = jfcEdge.showSaveDialog(null);
       if (returnVal == JFileChooser.APPROVE_OPTION) {
          outputFile = jfcEdge.getSelectedFile();
-         logger.info(output);
+         // logger.info(output);
          if (outputFile.exists ()) {
              int response = JOptionPane.showConfirmDialog(null, "Overwrite existing file?", "Confirm Overwrite",
                                                          JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
@@ -1230,7 +1230,7 @@ public class EdgeConvertGUI {
             returnVal = jfcEdge.showOpenDialog(null);
             if (returnVal == JFileChooser.APPROVE_OPTION) {
                parseFile = jfcEdge.getSelectedFile();
-               ecfp = new EdgeConvertFileParser(parseFile);
+               ecfp = new EdgeFileParser(parseFile);
                tables = ecfp.getEdgeTables();
                for (int i = 0; i < tables.length; i++) {
                   tables[i].makeArrays();
@@ -1269,7 +1269,7 @@ public class EdgeConvertGUI {
             returnVal = jfcEdge.showOpenDialog(null);
             if (returnVal == JFileChooser.APPROVE_OPTION) {
                saveFile = jfcEdge.getSelectedFile();
-               ecfp = new EdgeConvertFileParser(saveFile);
+               ecfp = new SaveFileParser(saveFile);
                tables = ecfp.getEdgeTables();
                fields = ecfp.getEdgeFields();
                ecfp = null;
@@ -1313,7 +1313,7 @@ public class EdgeConvertGUI {
                if (answer == JOptionPane.YES_OPTION) {
                   if (saveFile == null) {
                      saveAs();
-                     logger.debug("File is being saved");
+                     // logger.debug("File is being saved");
                   }
                }
                if ((answer == JOptionPane.CANCEL_OPTION) || (answer == JOptionPane.CLOSED_OPTION)) {

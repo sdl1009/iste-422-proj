@@ -5,11 +5,11 @@ import javax.swing.event.*;
 import java.io.*;
 import java.util.*;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+// import org.apache.logging.log4j.LogManager;
+// import org.apache.logging.log4j.Logger;
 
 public class CreateDDLMySQL extends EdgeConvertCreateDDL {
-   public static Logger logger = LogManager.getLogger(CreateDDLMySQL.class.getName());
+   // public static Logger logger = LogManager.getLogger(CreateDDLMySQL.class.getName());
 
    protected String databaseName;
    //this array is for determining how MySQL refers to datatypes

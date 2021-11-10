@@ -5,11 +5,11 @@ import javax.swing.event.*;
 import java.io.*;
 import java.util.*;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+// import org.apache.logging.log4j.LogManager;
+// import org.apache.logging.log4j.Logger;
 
 public abstract class EdgeConvertCreateDDL {
-   public static Logger logger = LogManager.getLogger(EdgeConvertCreateDDL.class.getName());
+   // public static Logger logger = LogManager.getLogger(EdgeConvertCreateDDL.class.getName());
 
    static String[] products = {"MySQL"};
    protected EdgeTable[] tables; //master copy of EdgeTable objects
@@ -20,14 +20,14 @@ public abstract class EdgeConvertCreateDDL {
    protected int selected;
    
    public EdgeConvertCreateDDL(EdgeTable[] tables, EdgeField[] fields) {
-      logger.info("Creating Edge Convert DDL with ");
+      // logger.info("Creating Edge Convert DDL with ");
       this.tables = tables;
       this.fields = fields;
       initialize();
    } //EdgeConvertCreateDDL(EdgeTable[], EdgeField[])
    
    public EdgeConvertCreateDDL() { //default constructor with empty arg list for to allow output dir to be set before there are table and field objects
-      logger.info("Creating no-arg Edge Convert DDL");
+      // logger.info("Creating no-arg Edge Convert DDL");
    } //EdgeConvertCreateDDL()
 
    public void initialize() {
@@ -35,7 +35,7 @@ public abstract class EdgeConvertCreateDDL {
       maxBound = 0;
       sb = new StringBuffer();
 
-      logger.info("Initializing table");
+      // logger.info("Initializing table");
 
       for (int i = 0; i < tables.length; i++) { //step through list of tables
          int numBound = 0; //initialize counter for number of bound tables
